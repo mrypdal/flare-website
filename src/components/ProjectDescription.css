@@ -1,0 +1,71 @@
+.objectives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.objective-card {
+  padding: 32px 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  border: 1px solid #e2e8f0;
+}
+
+.objective-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  border-color: #cbd5e1;
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: #f0f9ff;
+  border: 1px solid #e0f2fe;
+  margin-bottom: 20px;
+}
+
+.objective-icon {
+  color: var(--primary-dark);
+  width: 28px;
+  height: 28px;
+}
+
+.objective-title {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: var(--text-main);
+}
+
+.objective-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.timeline-container {
+  padding: 40px;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+}
+
+.timeline-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: var(--primary-dark);
+}
+
+.timeline-content p {
+  margin-bottom: 16px;
+  color: var(--text-muted);
+}
+
+.timeline-content p:last-child {
+  margin-bottom: 0;
+}
