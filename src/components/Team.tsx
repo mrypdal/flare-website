@@ -51,7 +51,7 @@ export default function Team() {
       name: "Achille Marino",
       role: "Extended Research Team",
       institution: "Affiliation coming soon",
-      image: ""
+      image: "/pres/bilde_AchilleMarino.png"
     },
     {
       name: "Flora McErlane",
@@ -63,7 +63,7 @@ export default function Team() {
       name: "Klaus Tenbrock",
       role: "Extended Research Team",
       institution: "Affiliation coming soon",
-      image: ""
+      image: "/pres/bilde_KlausTenbrock.png"
     },
     {
       name: "Martin Rypdal",
