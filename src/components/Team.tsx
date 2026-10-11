@@ -63,7 +63,7 @@ export default function Team() {
       name: "Klaus Tenbrock",
       role: "Extended Research Team",
       institution: "Affiliation coming soon",
-      image: "/pres/bilde_KlausTenbrock.png"
+      image: "/pres/bilde_KlausTenbrock.jpg"
     },
     {
       name: "Martin Rypdal",
