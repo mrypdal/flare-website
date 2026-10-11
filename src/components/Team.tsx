@@ -24,7 +24,7 @@ export default function Team() {
       name: "Filipa Ramos",
       role: "Task Force Member",
       institution: "University Hospital Santa Maria, Lisbon, Portugal",
-      image: ""
+      image: "/pres/bilde_FilipaRamos.jpg"
     },
     {
       name: "Jaime Guzman",
@@ -57,7 +57,7 @@ export default function Team() {
       name: "Flora McErlane",
       role: "Extended Research Team",
       institution: "Affiliation coming soon",
-      image: ""
+      image: "/pres/bilde_FloraMcErlane.jpg"
     },
     {
       name: "Klaus Tenbrock",
