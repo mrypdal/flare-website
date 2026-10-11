@@ -4,7 +4,7 @@ export default function Team() {
   const workingGroup = [
     {
       name: "Veronika Rypdal, MD, PhD",
-      role: "Principal Investigator",
+      role: "Working Group Member",
       institution: "Consultant, Department of Pediatrics, University Hospital of North Norway, Norway. Associate Professor of Pediatrics, UiT-The Arctic University of Norway, Tromsø, Norway. Chair of the PReS JIA Working Party.",
       image: "/pres/bilde_VeronikaRypdal.jpg"
     },
