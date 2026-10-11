@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react';
+
 import './Hero.css';
 
 export default function Hero() {
@@ -17,11 +17,7 @@ export default function Hero() {
           </p>
           
           <div className="hero-actions">
-            {/* Lenken til scoringssystemet */}
-            <a href="https://flare-scorer.onrender.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-              Go to Scoring System
-              <ArrowRight size={18} />
-            </a>
+
             <a href="#about" className="btn btn-outline">
               Learn More
             </a>
