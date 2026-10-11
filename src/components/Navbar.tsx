@@ -1,12 +1,10 @@
 import './Navbar.css';
-import { Activity } from 'lucide-react';
 
 export default function Navbar() {
   return (
     <nav className="navbar glass">
       <div className="container nav-container">
         <a href="#" className="nav-logo">
-          <Activity className="nav-icon" />
           <span className="nav-title">JIA Flare Project</span>
         </a>
         
