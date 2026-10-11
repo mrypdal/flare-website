@@ -10,37 +10,37 @@ export default function Team() {
     },
     {
       name: "Alessandro Consolaro",
-      role: "Task Force Member",
+      role: "Working Group Member",
       institution: "Istituto Giannina Gaslini and University of Genova, Italy",
       image: "/pres/bilde_AlessandroConsolaro.png"
     },
     {
       name: "Joost Swart",
-      role: "Task Force Member",
+      role: "Working Group Member",
       institution: "UMC Utrecht, Wilhelmina Children's Hospital, The Netherlands",
       image: "/pres/image10.jpg"
     },
     {
       name: "Filipa Ramos",
-      role: "Task Force Member",
+      role: "Working Group Member",
       institution: "University Hospital Santa Maria, Lisbon, Portugal",
       image: "/pres/bilde_FilipaRamos.jpg"
     },
     {
       name: "Jaime Guzman",
-      role: "Task Force Member",
+      role: "Working Group Member",
       institution: "BC Children's Hospital, Vancouver, Canada",
       image: "/pres/image9.jpg"
     },
     {
       name: "Hermine Brunner",
-      role: "Task Force Member",
+      role: "Working Group Member",
       institution: "Cincinnati Children's Hospital Medical Center, USA",
       image: "/pres/image7.jpg"
     },
     {
       name: "Silvia Maria Orsi",
-      role: "Task Force Member",
+      role: "Working Group Member",
       institution: "Istituto Giannina Gaslini and University of Genova, Italy",
       image: "/pres/image14.JPEG"
     }
