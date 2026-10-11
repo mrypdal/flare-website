@@ -100,7 +100,8 @@ export default function Team() {
     { name: "Susa Benseler, MD, PhD.", affiliation: "Chief Academic Officer and Head of Paediatric Health Affairs at Children's Health Ireland (CHI) and is a Professor of Paediatrics at University College Dublin, Ireland. Pediatric Rheumatology Stream Lead, ERN RITA (European Reference Network on Rare Immunological and Autoinflammatory Diseases). Representative for ERN RITA." },
     { name: "Caifeng Li, MD", affiliation: "Professor, Department of Rheumatology, Beijing Children’s Hospital, Capital Medical University, National Center for Children’s Health, Beijing, China." },
     { name: "Esi M. Morgan, MD, MSCE", affiliation: "Professor University of Washington. Head, Division of Rheumatology, Seattle Children’s Hospital, Seattle, USA. Chair, Pediatric Rheumatology Care and Outcomes Improvement Network (PR-COIN). Representative for PR-COIN." },
-    { name: "Erin Balay-Dustrude, MD, MS", affiliation: "Division of Rheumatology, Seattle Children’s Hospital, Seattle, USA. Co-chair Omeract JIA Working Group. Representative for Omeract JIA Working Group." }
+    { name: "Erin Balay-Dustrude, MD, MS", affiliation: "Division of Rheumatology, Seattle Children’s Hospital, Seattle, USA. Co-chair Omeract JIA Working Group. Representative for Omeract JIA Working Group." },
+    { name: "Ellen Berit Nordal, MD, PhD", affiliation: "Professor of Pediatrics, UiT-The Arctic University of Norway, Tromsø, Norway. Senior consultant department of Pediatrics, University Hospital of North Norway, Norway." }
   ];
 
   const contributors = [
