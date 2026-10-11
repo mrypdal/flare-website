@@ -1,4 +1,4 @@
-import { ArrowRight, Activity } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import './Hero.css';
 
 export default function Hero() {
