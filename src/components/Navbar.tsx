@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="nav-links">
           <a href="#about" className="nav-link">About</a>
           <a href="#team" className="nav-link">Task Force</a>
-          <a href="#meeting" className="nav-link">Meeting</a>
+          <a href="#meeting" className="nav-link">Consensus Meeting</a>
           <a href="#sponsors" className="nav-link">Sponsors</a>
           <a href="https://flare-scorer.onrender.com" target="_blank" rel="noopener noreferrer" className="nav-btn btn btn-primary">
             Scoring System
