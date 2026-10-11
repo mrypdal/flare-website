@@ -78,7 +78,7 @@ export default function Team() {
       name: "Vegard Nilsen",
       role: "Patient Representative",
       institution: "Styreleder Norsk Revamtikerforbund (NRF), Barne- og ungdomsrevmatikergruppen (BURG) Troms, Norway.",
-      image: ""
+      image: "/pres/bilde_VegardNilsen.jpeg"
     }
   ];
 
