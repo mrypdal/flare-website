@@ -125,7 +125,10 @@ export default function Team() {
           <div className="team-info">
             <h4 className="team-name">{member.name}</h4>
             <p className="team-role">{member.role}</p>
-            <p className="team-inst">{member.institution}</p>
+            <details className="team-inst-details">
+              <summary className="team-inst-summary">View Affiliation</summary>
+              <p className="team-inst">{member.institution}</p>
+            </details>
           </div>
         </div>
       ))}
@@ -155,7 +158,10 @@ export default function Team() {
           {otherMembers.map((member, idx) => (
             <li key={idx} className="other-member-item">
               <span className="other-member-name" style={{fontWeight: 600, display: "block", marginBottom: "4px"}}>{member.name}</span>
-              <span className="other-member-affil" style={{fontSize: "0.85rem", color: "var(--text-muted)", lineHeight: 1.4, display: "block"}}>{member.affiliation}</span>
+              <details className="team-inst-details">
+                <summary className="team-inst-summary">View Affiliation</summary>
+                <span className="other-member-affil" style={{fontSize: "0.85rem", color: "var(--text-muted)", lineHeight: 1.4, display: "block"}}>{member.affiliation}</span>
+              </details>
             </li>
           ))}
         </ul>
@@ -165,7 +171,10 @@ export default function Team() {
           {contributors.map((member, idx) => (
             <li key={idx} className="other-member-item">
               <span className="other-member-name" style={{fontWeight: 600, display: "block", marginBottom: "4px"}}>{member.name}</span>
-              <span className="other-member-affil" style={{fontSize: "0.85rem", color: "var(--text-muted)", lineHeight: 1.4, display: "block"}}>{member.affiliation}</span>
+              <details className="team-inst-details">
+                <summary className="team-inst-summary">View Affiliation</summary>
+                <span className="other-member-affil" style={{fontSize: "0.85rem", color: "var(--text-muted)", lineHeight: 1.4, display: "block"}}>{member.affiliation}</span>
+              </details>
             </li>
           ))}
         </ul>

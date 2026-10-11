@@ -89,3 +89,24 @@
   font-weight: 500;
   color: var(--text-main);
 }
+
+.team-inst-details {
+  margin-top: 4px;
+}
+
+.team-inst-summary {
+  font-size: 0.85rem;
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: 500;
+  user-select: none;
+  display: inline-block;
+}
+
+.team-inst-summary:hover {
+  text-decoration: underline;
+}
+
+.team-inst-details[open] .team-inst-summary {
+  margin-bottom: 6px;
+}
