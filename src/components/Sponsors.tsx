@@ -14,12 +14,28 @@ export default function Sponsors() {
           <div className="sponsor-card glass">
             <h3 className="sponsor-tier">Main Sponsors</h3>
             <div className="logo-container" style={{ gap: '40px', flexDirection: 'row', maxWidth: '500px' }}>
-              {/* J&J logo from local downloads */}
-              <img 
+              {/* J&J logo from local downloads (hidden until contract is signed) */}
+              <div 
+                style={{ 
+                  width: '150px', 
+                  height: '80px', 
+                  backgroundColor: '#e2e8f0', 
+                  borderRadius: '8px', 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center',
+                  color: '#64748b',
+                  fontSize: '0.9rem',
+                  fontWeight: 500
+                }}
+              >
+                Pending
+              </div>
+              {/* <img 
                 src="/logos/johnson-johnson-logo.svg" 
                 alt="Johnson & Johnson Logo" 
                 className="sponsor-logo" 
-              />
+              /> */}
               <img 
                 src="/logos/logo_Harbitz.png" 
                 alt="Harbitz Logo" 
@@ -52,6 +68,16 @@ export default function Sponsors() {
             The sponsor has no control over or involvement in the scientific content, data analysis, 
             or the final consensus-driven definition of disease flare.
           </p>
+          <div style={{marginTop: "20px", textAlign: "center"}}>
+            <a 
+              href="/docs/Funding_opportunity_letter.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              style={{fontSize: "0.85rem", color: "var(--primary)", textDecoration: "underline"}}
+            >
+              View Funding Opportunity Document
+            </a>
+          </div>
         </div>
       </div>
     </section>
