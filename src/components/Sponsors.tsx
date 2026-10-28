@@ -63,9 +63,7 @@ export default function Sponsors() {
         <div className="disclaimer glass">
           <h4>Funding Transparency & Independence</h4>
           <p>
-            The Disease Flare in Non-Systemic JIA project receives financial sponsorship from Johnson & Johnson. 
-            This sponsorship supports the organizational and research activities of the Flare Task Force. 
-            The sponsor has no control over or involvement in the scientific content, data analysis, 
+            Sponsors have no control over or involvement in the scientific content, data analysis, 
             or the final consensus-driven definition of disease flare.
           </p>
           <div style={{marginTop: "20px", textAlign: "center"}}>
