@@ -46,7 +46,7 @@ export default function ProjectDescription() {
           <div className="timeline-content">
             <h3>Project Progress</h3>
             <p>
-              The Flare Interest Group was established in fall 2025. We have completed a systematic literature review (SLR) 
+              The Flare Working Group was established in fall 2025. We have completed a systematic literature review (SLR) 
               of published trials and conducted an international task force survey. 
             </p>
             <p>

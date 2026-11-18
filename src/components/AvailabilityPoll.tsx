@@ -2,43 +2,6 @@ import { useState, useEffect } from 'react';
 
 const API_URL = 'https://flare-scorer.onrender.com/api/availability';
 
-const TASK_FORCE_MEMBERS = [
-  'Achille Marino',
-  'Alessandro Consolaro',
-  'Angela Nyangore Migowa',
-  'Brian Feldman',
-  'Caifeng Li',
-  'Daniel B. Horton',
-  'Demi van Grieken',
-  'Ellen Berit Nordal',
-  'Erin Balay-Dustrude',
-  'Esi M. Morgan',
-  'Fabrizio Debenedetti',
-  'Filipa Oliveira Ramos',
-  'Flora McErlane',
-  'Gerd Horneff',
-  'Helmut Wittkowski',
-  'Hermine I. Brunner',
-  'Jaime Guzman',
-  'Joost Swart',
-  'Kirsten Minden',
-  'Klaus Tenbrock',
-  'Marinka Twilt',
-  'Martin Rypdal',
-  'Mia Glerup',
-  'Pamela F. Weiss',
-  'Petra Hissink Muller',
-  'Raul Gutierrez Suarez',
-  'Seza Ozen',
-  'Silvia Maria Orsi',
-  'Stephanie J.W. Shoop-Worrall',
-  'Susa Benseler',
-  'Sytze de Roock',
-  'Tonje Løvli',
-  'Vegard Nilsen',
-  'Veronika Rypdal',
-];
-
 const APRIL_OPTIONS = [
   {
     value: 1,
@@ -82,8 +45,7 @@ export default function AvailabilityPoll({
   initialName = '',
   onClose,
 }: Props) {
-  const [selectedMember, setSelectedMember] = useState<string>(initialName || '');
-  const [customName, setCustomName] = useState<string>('');
+  const [name, setName] = useState<string>(initialName || '');
   const [aprilChoice, setAprilChoice] = useState<number | null>(initialApril);
   const [mayChoice, setMayChoice] = useState<number | null>(initialMay);
   const [comments, setComments] = useState<string>('');
@@ -96,14 +58,14 @@ export default function AvailabilityPoll({
     fetch(API_URL, { method: 'GET' }).catch(() => {});
   }, []);
 
-  const finalName = selectedMember === '__OTHER__' ? customName.trim() : selectedMember.trim();
+  const finalName = name.trim();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
 
     if (!finalName) {
-      setError('Please select your name from the list (or enter it below).');
+      setError('Please type your name.');
       return;
     }
     if (!aprilChoice || !mayChoice) {
@@ -238,7 +200,7 @@ export default function AvailabilityPoll({
           </div>
 
           <p style={{ color: '#334155', lineHeight: 1.6, marginTop: '8px', marginBottom: '24px' }}>
-            Dear Flare Task Force Members, we are currently planning the Flare Task Force meeting in Oslo in 2027 and would appreciate your feedback on the proposed dates. Please select your name and indicate which option best describes your availability for both the preferred April dates and the alternative May dates.
+            Dear Flare Task Force Members, we are currently planning the Flare Task Force meeting in Oslo in 2027 and would appreciate your feedback on the proposed dates. Please type your name and indicate which option best describes your availability for both the preferred April dates and the alternative May dates.
           </p>
 
           {submitted ? (
@@ -319,9 +281,11 @@ export default function AvailabilityPoll({
                 >
                   Your Name *
                 </label>
-                <select
-                  value={selectedMember}
-                  onChange={(e) => setSelectedMember(e.target.value)}
+                <input
+                  type="text"
+                  placeholder="Type your name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   style={{
                     width: '100%',
                     padding: '12px 14px',
@@ -330,34 +294,9 @@ export default function AvailabilityPoll({
                     fontSize: '0.98rem',
                     backgroundColor: '#fff',
                     color: '#0f172a',
+                    boxSizing: 'border-box',
                   }}
-                >
-                  <option value="">— Select your name from the Task Force list —</option>
-                  {TASK_FORCE_MEMBERS.map((m) => (
-                    <option key={m} value={m}>
-                      {m}
-                    </option>
-                  ))}
-                  <option value="__OTHER__">Other / Enter name manually...</option>
-                </select>
-
-                {selectedMember === '__OTHER__' && (
-                  <input
-                    type="text"
-                    placeholder="Enter your full name"
-                    value={customName}
-                    onChange={(e) => setCustomName(e.target.value)}
-                    style={{
-                      width: '100%',
-                      marginTop: '10px',
-                      padding: '12px 14px',
-                      borderRadius: '10px',
-                      border: '1.5px solid #cbd5e1',
-                      fontSize: '0.98rem',
-                      boxSizing: 'border-box',
-                    }}
-                  />
-                )}
+                />
               </div>
 
               {/* Preferred Dates: 14-15 April 2027 */}
